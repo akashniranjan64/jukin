@@ -70,6 +70,9 @@ jobs:
       run: 
         cd /terraform/resource
         terraform init
+      with:
+        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         
     # Generates an execution plan for Terraform
     - name: Terraform Plan
