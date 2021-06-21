@@ -74,6 +74,7 @@ jobs:
       run: |
         ls -a
         cd terraform/resources
+        ls -a
         ./before_script.sh
         
     # Generates an execution plan for Terraform
