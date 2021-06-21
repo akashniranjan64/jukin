@@ -15,7 +15,7 @@ terraform {
   backend "s3" {
     bucket = "terraform-state-file"
     region = "ap-south-1"
-    dynamo_table = "s3-state-lock"
+    dynamodb_table = "s3-state-lock"
     
   }
 }
