@@ -17,8 +17,8 @@ terraform {
     key = "jukin-terraform.tfstate"
     region = "ap-south-1"
     dynamodb_table = "s3-state-lock"
-    access_key = AWS_ACCESS_KEY_ID
-    secret_key = AWS_SECRET_ACCESS_KEY
+    access_key = var.aws_access_key
+    secret_key = var.aws_secret_access_key
     
   }
 }
