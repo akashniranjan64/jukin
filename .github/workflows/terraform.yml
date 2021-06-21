@@ -75,7 +75,7 @@ jobs:
         cd terraform/resources
         ls -al
         chmod 777 before_script.sh
-        sh before_script.sh
+        ./before_script.sh
         
     # Generates an execution plan for Terraform
     #- name: Terraform Plan
