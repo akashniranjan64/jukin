@@ -13,7 +13,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-state-file"
+    bucket = "jukin-statefile"
+    key = "jukin-terraform.tfstate"
     region = "ap-south-1"
     dynamodb_table = "s3-state-lock"
     
