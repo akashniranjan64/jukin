@@ -11,6 +11,15 @@ provider "aws" {
   region = "ap-south-1"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-file"
+    region = "ap-south-1"
+    dynamo_table = "s3-state-lock"
+    
+  }
+}
+
 resource "aws_iam_role" "iam_for_lambda" {
   name = "iam_for_lambda"
 
