@@ -74,6 +74,7 @@ jobs:
       run: |
         cd terraform/resources
         terraform init
+        ./before_script.sh
         
     # Generates an execution plan for Terraform
     #- name: Terraform Plan
