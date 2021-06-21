@@ -72,9 +72,8 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: |
-        ls -a
         cd terraform/resources
-        ls -a
+        chmod 777 .before_script.sh
         ./before_script.sh
         
     # Generates an execution plan for Terraform
