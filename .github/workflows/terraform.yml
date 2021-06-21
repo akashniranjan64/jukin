@@ -73,7 +73,8 @@ jobs:
     - name: Terraform Init
       run: |
         cd terraform/resources
-        chmod 777 .before_script.sh
+        ls -l
+        chmod 777 before_script.sh
         ./before_script.sh
         
     # Generates an execution plan for Terraform
