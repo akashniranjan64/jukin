@@ -11,8 +11,6 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-#test line
-
 terraform {
   backend "s3" {
     bucket = "jukin-statefile"
